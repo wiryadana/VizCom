@@ -1,4 +1,10 @@
-about
-usage
-render-book
-preview-book
+hello-world
+basic-data-visualization-with-base-r
+advanced-data-visualization-with-base-r
+special-mention-data-visualization-with-base-r
+basic-data-visualization-with-lattice-package
+advanced-data-visualization-with-lattice-package
+special-mention-data-visualization-with-base-r-1
+basic-data-visualization-with-ggplot2-package
+special-mention-data-visualization-with-ggplot2-package
+advanced-data-visualization-with-ggplot2-package
