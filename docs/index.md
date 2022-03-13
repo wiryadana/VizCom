@@ -1,7 +1,7 @@
 --- 
 title: "VizCom - Curated Collection of Data Visualization by Rstat Community"
 author: "Kadek Adit Wiryadana & Rstat Community"
-date: "2022-03-10"
+date: "2022-03-13"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib, other.bib]
