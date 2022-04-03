@@ -1,7 +1,7 @@
 --- 
-title: "VizCom - Curated Collection of Data Visualization by Rstat Community"
+title: "VizCom - Curated Collection of Data Visualization from the #Rstat Community"
 author: "Kadek Adit Wiryadana & Rstat Community"
-date: "2022-03-13"
+date: "2022-04-03"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib, other.bib]
@@ -15,8 +15,8 @@ csl: chicago-fullnote-bibliography.csl
 
 # Hello World
 
-Hello world, this is some of my first book. I always dreamed to be a book writer since my childhood. Thanks to the opportunity given by the boom of open source software and its philosophy. 
+<img src="vizcom_cover.png" style="display: block; margin: auto;" />
 
-
-
+Hello world, this is some of my first book. I always dreamed to be a book writer since I was kid. Thanks to the opportunity given by the boom of open source software and its philosophy, finally I am able to compose this book while being a self sufficient publisher at once.
+ 
 

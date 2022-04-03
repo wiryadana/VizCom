@@ -1,5 +1,5 @@
 --- 
-title: "VizCom - Curated Collection of Data Visualization by Rstat Community"
+title: "VizCom - Curated Collection of Data Visualization from the #Rstat Community"
 author: "Kadek Adit Wiryadana & Rstat Community"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -15,10 +15,12 @@ csl: chicago-fullnote-bibliography.csl
 
 # Hello World
 
-Hello world, this is some of my first book. I always dreamed to be a book writer since my childhood. Thanks to the opportunity given by the boom of open source software and its philosophy. 
+```{r bookcover, echo=FALSE, fig.align='center', fig.width=4, fig.height=6}
+knitr::include_graphics("vizcom_cover.png", dpi = NA)
+```
 
-
-
+Hello world, this is some of my first book. I always dreamed to be a book writer since I was kid. Thanks to the opportunity given by the boom of open source software and its philosophy, finally I am able to compose this book while being a self sufficient publisher at once.
+ 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
 knitr::write_bib(c(
