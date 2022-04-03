@@ -1,4 +1,3 @@
-hello-world
 basic-data-visualization-with-base-r
 advanced-data-visualization-with-base-r
 special-mention-data-visualization-with-base-r
