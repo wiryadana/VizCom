@@ -4,17 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 2 Basic Data Visualization with Base R | VizCom - Curated Collection of Data Visualization from the #Rstat Community</title>
+<title>Chapter 1 Basic Data Visualization with Base R | VizCom - Curated Collection of Data Visualization from the #Rstat Community</title>
 <meta name="author" content="Kadek Adit Wiryadana &amp; Rstat Community">
-<meta name="description" content='2.1 Scatter Plot Simple scatter plot and regression line. Please ignore the data and its possible interpretation. dm &lt;- read.csv("data/diabetes.csv", na.strings = c("NA", "0")) #string NA and 0...'>
+<meta name="description" content='1.1 Scatter Plot Simple scatter plot and regression line. Please ignore the data and its possible interpretation. dm &lt;- read.csv("data/diabetes.csv", na.strings = c("NA", "0")) #string NA and 0...'>
 <meta name="generator" content="bookdown 0.24 with bs4_book()">
-<meta property="og:title" content="Chapter 2 Basic Data Visualization with Base R | VizCom - Curated Collection of Data Visualization from the #Rstat Community">
+<meta property="og:title" content="Chapter 1 Basic Data Visualization with Base R | VizCom - Curated Collection of Data Visualization from the #Rstat Community">
 <meta property="og:type" content="book">
-<meta property="og:url" content="https://wiryadana.github.io/VizCom/basic-data-visualization-with-base-r.html">
-<meta property="og:description" content='2.1 Scatter Plot Simple scatter plot and regression line. Please ignore the data and its possible interpretation. dm &lt;- read.csv("data/diabetes.csv", na.strings = c("NA", "0")) #string NA and 0...'>
+<meta property="og:url" content="https://wiryadana.github.io/VizCom/base_r.html">
+<meta property="og:description" content='1.1 Scatter Plot Simple scatter plot and regression line. Please ignore the data and its possible interpretation. dm &lt;- read.csv("data/diabetes.csv", na.strings = c("NA", "0")) #string NA and 0...'>
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 2 Basic Data Visualization with Base R | VizCom - Curated Collection of Data Visualization from the #Rstat Community">
-<meta name="twitter:description" content='2.1 Scatter Plot Simple scatter plot and regression line. Please ignore the data and its possible interpretation. dm &lt;- read.csv("data/diabetes.csv", na.strings = c("NA", "0")) #string NA and 0...'>
+<meta name="twitter:title" content="Chapter 1 Basic Data Visualization with Base R | VizCom - Curated Collection of Data Visualization from the #Rstat Community">
+<meta name="twitter:description" content='1.1 Scatter Plot Simple scatter plot and regression line. Please ignore the data and its possible interpretation. dm &lt;- read.csv("data/diabetes.csv", na.strings = c("NA", "0")) #string NA and 0...'>
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -39,20 +39,63 @@
 </form>
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled"><li><a class="" href="index.html"><span class="header-section-number">Chapter 2</span> Basic Data Visualization with Base R</a></li></ul>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"></a></li>
+<li class="book-part">Base R</li>
+<li><a class="active" href="base_r.html"><span class="header-section-number">1</span> Basic Data Visualization with Base R</a></li>
+<li><a class="" href="advanced-data-visualization-with-base-r.html"><span class="header-section-number">2</span> Advanced Data Visualization with Base R</a></li>
+<li><a class="" href="special-mention-data-visualization-with-base-r.html"><span class="header-section-number">3</span> Special (Mention) Data Visualization with Base R</a></li>
+<li class="book-part">Lattice Package</li>
+<li><a class="" href="basic-data-visualization-with-lattice-package.html"><span class="header-section-number">4</span> Basic Data Visualization with Lattice Package</a></li>
+<li><a class="" href="advanced-data-visualization-with-lattice-package.html"><span class="header-section-number">5</span> Advanced Data Visualization with Lattice Package</a></li>
+<li><a class="" href="special-mention-data-visualization-with-base-r-1.html"><span class="header-section-number">6</span> Special (Mention) Data Visualization with Base R</a></li>
+<li class="book-part">ggplot2 Package</li>
+<li><a class="" href="basic-data-visualization-with-ggplot2-package.html"><span class="header-section-number">7</span> Basic Data Visualization with ggplot2 Package</a></li>
+<li><a class="" href="special-mention-data-visualization-with-ggplot2-package.html"><span class="header-section-number">8</span> Special (Mention) Data Visualization with ggplot2 Package</a></li>
+<li><a class="" href="advanced-data-visualization-with-ggplot2-package.html"><span class="header-section-number">9</span> Advanced Data Visualization with ggplot2 Package</a></li>
+<li class="book-part">Interactive Plot</li>
+<li><a class="" href="making-interactive-data-visualization-with-plotly-package.html"><span class="header-section-number">10</span> Making Interactive Data Visualization with Plotly Package</a></li>
+<li><a class="" href="making-interactive-heatmap.html"><span class="header-section-number">11</span> Making Interactive Heatmap</a></li>
+<li><a class="" href="making-interactive-streamgraph.html"><span class="header-section-number">12</span> Making Interactive Streamgraph</a></li>
+<li><a class="" href="making-interactive-map-with-leaflet-package.html"><span class="header-section-number">13</span> Making Interactive Map with Leaflet Package</a></li>
+<li><a class="" href="making-interactive-time-series-plot.html"><span class="header-section-number">14</span> Making Interactive Time Series Plot</a></li>
+<li><a class="" href="interactive-3d-plot.html"><span class="header-section-number">15</span> Interactive 3D Plot</a></li>
+<li><a class="" href="miscellaneous-interactive-plot.html"><span class="header-section-number">16</span> Miscellaneous Interactive Plot</a></li>
+<li class="book-part">Network Visualization</li>
+<li><a class="" href="igraph-package.html"><span class="header-section-number">17</span> igraph Package</a></li>
+<li class="book-part">Diagram Visualization</li>
+<li><a class="" href="diagrammer-package.html"><span class="header-section-number">18</span> DiagrammeR Package</a></li>
+<li class="book-part">Complex Graphing Library</li>
+<li><a class="" href="highcharter-package.html"><span class="header-section-number">19</span> Highcharter Package</a></li>
+<li class="book-part">Special Graphing Library</li>
+<li><a class="" href="speciality-plot.html"><span class="header-section-number">20</span> Speciality Plot</a></li>
+<li class="book-part">Creating Table in R</li>
+<li><a class="" href="basic-table-visualization.html"><span class="header-section-number">21</span> Basic Table Visualization</a></li>
+<li><a class="" href="gt.html"><span class="header-section-number">22</span> GT</a></li>
+<li><a class="" href="dt.html"><span class="header-section-number">23</span> DT</a></li>
+<li><a class="" href="kable-kable-extra.html"><span class="header-section-number">24</span> Kable &amp; Kable Extra</a></li>
+<li><a class="" href="formattable.html"><span class="header-section-number">25</span> Formattable</a></li>
+<li><a class="" href="reactable.html"><span class="header-section-number">26</span> Reactable</a></li>
+<li><a class="" href="flextable.html"><span class="header-section-number">27</span> Flextable</a></li>
+<li class="book-part">Creating Animation R</li>
+<li><a class="" href="gganimate.html"><span class="header-section-number">28</span> gganimate</a></li>
+<li class="book-part">Content Delivery</li>
+<li><a class="" href="content-delivery.html"><span class="header-section-number">29</span> Content Delivery</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
 
         <div class="book-extra">
           <p><a id="book-repo" href="https://github.com/wiryadana/VizCom">View book source <i class="fab fa-github"></i></a></p>
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="basic-data-visualization-with-base-r" class="section level1" number="2">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="base_r" class="section level1" number="1">
 <h1>
-<span class="header-section-number">2</span> Basic Data Visualization with Base R<a class="anchor" aria-label="anchor" href="#basic-data-visualization-with-base-r"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1</span> Basic Data Visualization with Base R<a class="anchor" aria-label="anchor" href="#base_r"><i class="fas fa-link"></i></a>
 </h1>
-<div id="scatter-plot" class="section level2" number="2.1">
+<div id="scatter-plot" class="section level2" number="1.1">
 <h2>
-<span class="header-section-number">2.1</span> Scatter Plot<a class="anchor" aria-label="anchor" href="#scatter-plot"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1.1</span> Scatter Plot<a class="anchor" aria-label="anchor" href="#scatter-plot"><i class="fas fa-link"></i></a>
 </h2>
 <p>Simple scatter plot and regression line. Please ignore the data and its possible interpretation.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
@@ -90,38 +133,46 @@
 <span class="fu"><a href="https://rdrr.io/r/graphics/text.html">text</a></span><span class="op">(</span><span class="fl">122</span>,<span class="fl">650</span>, <span class="st">"Poor Outcome"</span>, col <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/grDevices/rgb.html">rgb</a></span><span class="op">(</span><span class="fl">105</span>, <span class="fl">147</span>, <span class="fl">45</span>, maxColorValue <span class="op">=</span> <span class="fl">255</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <div class="inline-figure"><img src="02-basic-baseR_files/figure-html/scatterplot1-1.png" width="576" style="display: block; margin: auto;"></div>
 </div>
-<div id="histogram" class="section level2" number="2.2">
+<div id="histogram" class="section level2" number="1.2">
 <h2>
-<span class="header-section-number">2.2</span> Histogram<a class="anchor" aria-label="anchor" href="#histogram"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1.2</span> Histogram<a class="anchor" aria-label="anchor" href="#histogram"><i class="fas fa-link"></i></a>
 </h2>
 </div>
-<div id="bar-plot" class="section level2" number="2.3">
+<div id="bar-plot" class="section level2" number="1.3">
 <h2>
-<span class="header-section-number">2.3</span> Bar Plot<a class="anchor" aria-label="anchor" href="#bar-plot"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1.3</span> Bar Plot<a class="anchor" aria-label="anchor" href="#bar-plot"><i class="fas fa-link"></i></a>
 </h2>
 </div>
-<div id="spline-plot" class="section level2" number="2.4">
+<div id="spline-plot" class="section level2" number="1.4">
 <h2>
-<span class="header-section-number">2.4</span> Spline Plot<a class="anchor" aria-label="anchor" href="#spline-plot"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1.4</span> Spline Plot<a class="anchor" aria-label="anchor" href="#spline-plot"><i class="fas fa-link"></i></a>
 </h2>
 </div>
-<div id="dot-plot" class="section level2" number="2.5">
+<div id="dot-plot" class="section level2" number="1.5">
 <h2>
-<span class="header-section-number">2.5</span> Dot Plot<a class="anchor" aria-label="anchor" href="#dot-plot"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1.5</span> Dot Plot<a class="anchor" aria-label="anchor" href="#dot-plot"><i class="fas fa-link"></i></a>
 </h2>
 
 </div>
 </div>
   <div class="chapter-nav">
-<div class="empty"></div>
-<div class="empty"></div>
+<div class="prev"><a href="index.html"></a></div>
+<div class="next"><a href="advanced-data-visualization-with-base-r.html"><span class="header-section-number">2</span> Advanced Data Visualization with Base R</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <div id="book-on-this-page"></div>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#base_r"><span class="header-section-number">1</span> Basic Data Visualization with Base R</a></li>
+<li><a class="nav-link" href="#scatter-plot"><span class="header-section-number">1.1</span> Scatter Plot</a></li>
+<li><a class="nav-link" href="#histogram"><span class="header-section-number">1.2</span> Histogram</a></li>
+<li><a class="nav-link" href="#bar-plot"><span class="header-section-number">1.3</span> Bar Plot</a></li>
+<li><a class="nav-link" href="#spline-plot"><span class="header-section-number">1.4</span> Spline Plot</a></li>
+<li><a class="nav-link" href="#dot-plot"><span class="header-section-number">1.5</span> Dot Plot</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-          
+<li><a id="book-source" href="https://github.com/wiryadana/VizCom/blob/master/02-basic-baseR.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/wiryadana/VizCom/edit/master/02-basic-baseR.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>
@@ -133,7 +184,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>VizCom - Curated Collection of Data Visualization from the #Rstat Community</strong>" was written by Kadek Adit Wiryadana &amp; Rstat Community. It was last built on 2022-04-10.</p>
+    <p>"<strong>VizCom - Curated Collection of Data Visualization from the #Rstat Community</strong>" was written by Kadek Adit Wiryadana &amp; Rstat Community. It was last built on 2022-04-18.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

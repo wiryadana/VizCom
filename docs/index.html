@@ -42,7 +42,7 @@
         <ul class="book-toc list-unstyled">
 <li><a class="active" href="index.html"></a></li>
 <li class="book-part">Base R</li>
-<li><a class="" href="basic-data-visualization-with-base-r.html"><span class="header-section-number">1</span> Basic Data Visualization with Base R</a></li>
+<li><a class="" href="base_r.html"><span class="header-section-number">1</span> Basic Data Visualization with Base R</a></li>
 <li><a class="" href="advanced-data-visualization-with-base-r.html"><span class="header-section-number">2</span> Advanced Data Visualization with Base R</a></li>
 <li><a class="" href="special-mention-data-visualization-with-base-r.html"><span class="header-section-number">3</span> Special (Mention) Data Visualization with Base R</a></li>
 <li class="book-part">Lattice Package</li>
@@ -95,11 +95,44 @@
 <div id="welcome" class="section level2 unnumbered">
 <h2>Welcome<a class="anchor" aria-label="anchor" href="#welcome"><i class="fas fa-link"></i></a>
 </h2>
-<p>I always dreamed to be a book writer since I was kid. Thanks to the opportunity given by the boom of open source software, finally I am able to compose my first book while being a self sufficient publisher at once. I was trained as a medical doctor. During my training, I was exposed to epidemiology and statistics. Statistics turned out to be one of my favorite subject. When first taught, we were told to use a proprietary software. It was a point of click software, relatively straight forward and all works well for the kind of analysis we usually need. Only after I need to learn to do a more complex analysis and a better looking graph, the software could not provide the neccesarry feature. Fast forwards, I learn that there are a programming language, called R, that was free and customizable but has a steep learning curve. I tried. Still, for almost three years, I’m still cheating from stack overflow and others for the works that I do with R.</p>
+<p>I always dreamed to be a book writer since I was kid. Thanks to the opportunity given by the boom of open source software, finally I am able to compose my first book while being a self sufficient publisher at once. I was trained as a medical doctor. During my training, I was exposed to epidemiology and statistics. Statistics turned out to be one of my favorite subject. When first taught, we were told to use a proprietary software. It was a point of click software, relatively straight forward and all works well for the kind of analysis we usually need. Only after I need to learn to do a more complex analysis and a better looking graph, the software could not provide the necessary feature. Fast forwards, I learn that there are a programming language, called R, that was free and customizable but has a steep learning curve. I tried. Still, for almost three years, I’m still cheating from stack overflow and others for the works that I do with R.</p>
 <p>There are various books about the science and conceptual framework of data visualization to the technical detail of R code to the manual book of each function. What lacking is a curation of community made plot. There are numerous individual sharing their creativity with R in the Twitter and blog. I believe for noobs like me, studying their plot is a good way to learn plot making with R. Community made plot were full of creativity, while tutorial available in books were rather basic. In the end, this books is basically my personal notes on learning plot making with R and all others packages.</p>
-<p>I hope somebody will read this books someday. This books should be available for free in digital format, both the web and pdf version. his book were made with R v4.1.2 through RStudio Server running on top of Ubuntu Server (v21.04).<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;R Core Team, &lt;em&gt;R: A Language and Environment for Statistical Computing&lt;/em&gt; (Vienna, Austria: R Foundation for Statistical Computing, 2021), &lt;a href="https://www.R-project.org/" role="doc-biblioref"&gt;https://www.R-project.org/&lt;/a&gt;; Rstudio, &lt;span&gt;“&lt;span&gt;RStudio&lt;/span&gt;: &lt;span&gt;Integrated&lt;/span&gt; &lt;span&gt;Development&lt;/span&gt; for &lt;span&gt;R&lt;/span&gt;”&lt;/span&gt; (Boston: Rstudio PBC, 2021), &lt;a href="http://www.rstudio.com/" role="doc-biblioref"&gt;http://www.rstudio.com/&lt;/a&gt;; Canonical, &lt;span&gt;“Ubuntu &lt;span&gt;Server&lt;/span&gt;”&lt;/span&gt; (London, 2021), &lt;a href="https://wiki.ubuntu.com/FocalFossa/ReleaseNotes?_ga=2.202901329.1166669392.1642903327-1244252401.1642903327" role="doc-biblioref"&gt;https://wiki.ubuntu.com/FocalFossa/ReleaseNotes?_ga=2.202901329.1166669392.1642903327-1244252401.1642903327&lt;/a&gt;.&lt;/p&gt;'><sup>1</sup></a></span> The book were possible only because somebody skillful and clever invented bookdown, rmarkdown, knitr and tidyverse.<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Yihui Xie, &lt;em&gt;Bookdown: Authoring Books and Technical Documents with r Markdown&lt;/em&gt;, 2021, &lt;a href="https://CRAN.R-project.org/package=bookdown" role="doc-biblioref"&gt;https://CRAN.R-project.org/package=bookdown&lt;/a&gt;; JJ Allaire et al., &lt;em&gt;Rmarkdown: Dynamic Documents for r&lt;/em&gt;, 2021, &lt;a href="https://CRAN.R-project.org/package=rmarkdown" role="doc-biblioref"&gt;https://CRAN.R-project.org/package=rmarkdown&lt;/a&gt;; Yihui Xie, &lt;em&gt;Knitr: A General-Purpose Package for Dynamic Report Generation in r&lt;/em&gt;, 2021, &lt;a href="https://yihui.org/knitr/" role="doc-biblioref"&gt;https://yihui.org/knitr/&lt;/a&gt;; Hadley Wickham, &lt;em&gt;Tidyverse: Easily Install and Load the Tidyverse&lt;/em&gt;, 2021, &lt;a href="https://CRAN.R-project.org/package=tidyverse" role="doc-biblioref"&gt;https://CRAN.R-project.org/package=tidyverse&lt;/a&gt;.&lt;/p&gt;'><sup>2</sup></a></span> For the sake of accesibility, I provided the qrcode which code for the URL of the books for the readers to scan.<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Victor Teh and Thierry Onkelinx, &lt;em&gt;Qrcode: Generate QRcodes with r. Version 0.1.4&lt;/em&gt;, 2021, &lt;a href="https://doi.org/10.5281/zenodo.5040088" role="doc-biblioref"&gt;https://doi.org/10.5281/zenodo.5040088&lt;/a&gt;.&lt;/p&gt;'><sup>3</sup></a></span> If you have suggestions, feel free to contact me at <a href="mailto:ka.wiryadana@gmail.com" class="email">ka.wiryadana@gmail.com</a> or <a href="mailto:wiryadana@wiryadana.org" class="email">wiryadana@wiryadana.org</a>. This book were written during my free time after I had to have surgery for a non-united fracture of right arm. This is a one effort to avoid over thinking and a way to recover from my sadness. Please do not expect a perfection.</p>
-<p>Eventhough I work alone, the content were inspired and cited from various #Rstat Community, thus a big thanks for them. Also, I would like to thank my mother who always take care of me, my father and big brother who always supportive, and my little brother who forces me for a play when I hit a block. The last for someone who I love, a perfect woman who I don’t expect to meet, I hope the best for you even though you do not felt the same.</p>
+<p>I hope somebody will read this books someday. This books should be available for free in digital format, both the web and pdf version. his book were made with R v4.1.2 through RStudio Server running on top of Ubuntu Server (v21.04).<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;R Core Team, &lt;em&gt;R: A Language and Environment for Statistical Computing&lt;/em&gt; (Vienna, Austria: R Foundation for Statistical Computing, 2021), &lt;a href="https://www.R-project.org/" role="doc-biblioref"&gt;https://www.R-project.org/&lt;/a&gt;; Rstudio, &lt;span&gt;“&lt;span&gt;RStudio&lt;/span&gt;: &lt;span&gt;Integrated&lt;/span&gt; &lt;span&gt;Development&lt;/span&gt; for &lt;span&gt;R&lt;/span&gt;”&lt;/span&gt; (Boston: Rstudio PBC, 2021), &lt;a href="http://www.rstudio.com/" role="doc-biblioref"&gt;http://www.rstudio.com/&lt;/a&gt;; Canonical, &lt;span&gt;“Ubuntu &lt;span&gt;Server&lt;/span&gt;”&lt;/span&gt; (London, 2021), &lt;a href="https://wiki.ubuntu.com/FocalFossa/ReleaseNotes?_ga=2.202901329.1166669392.1642903327-1244252401.1642903327" role="doc-biblioref"&gt;https://wiki.ubuntu.com/FocalFossa/ReleaseNotes?_ga=2.202901329.1166669392.1642903327-1244252401.1642903327&lt;/a&gt;.&lt;/p&gt;'><sup>1</sup></a></span> The book were possible only because somebody skillful and clever invented bookdown, rmarkdown, knitr and tidyverse.<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Yihui Xie, &lt;em&gt;Bookdown: Authoring Books and Technical Documents with r Markdown&lt;/em&gt;, 2021, &lt;a href="https://CRAN.R-project.org/package=bookdown" role="doc-biblioref"&gt;https://CRAN.R-project.org/package=bookdown&lt;/a&gt;; JJ Allaire et al., &lt;em&gt;Rmarkdown: Dynamic Documents for r&lt;/em&gt;, 2021, &lt;a href="https://CRAN.R-project.org/package=rmarkdown" role="doc-biblioref"&gt;https://CRAN.R-project.org/package=rmarkdown&lt;/a&gt;; Yihui Xie, &lt;em&gt;Knitr: A General-Purpose Package for Dynamic Report Generation in r&lt;/em&gt;, 2021, &lt;a href="https://yihui.org/knitr/" role="doc-biblioref"&gt;https://yihui.org/knitr/&lt;/a&gt;; Hadley Wickham, &lt;em&gt;Tidyverse: Easily Install and Load the Tidyverse&lt;/em&gt;, 2021, &lt;a href="https://CRAN.R-project.org/package=tidyverse" role="doc-biblioref"&gt;https://CRAN.R-project.org/package=tidyverse&lt;/a&gt;.&lt;/p&gt;'><sup>2</sup></a></span> For the sake of accessibility, I provided the qrcode which code for the URL of the books for the readers to scan.<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Victor Teh and Thierry Onkelinx, &lt;em&gt;Qrcode: Generate QRcodes with r. Version 0.1.4&lt;/em&gt;, 2021, &lt;a href="https://doi.org/10.5281/zenodo.5040088" role="doc-biblioref"&gt;https://doi.org/10.5281/zenodo.5040088&lt;/a&gt;.&lt;/p&gt;'><sup>3</sup></a></span> If you have suggestions, feel free to contact me at <a href="mailto:ka.wiryadana@gmail.com" class="email">ka.wiryadana@gmail.com</a> or <a href="mailto:wiryadana@wiryadana.org" class="email">wiryadana@wiryadana.org</a>. This book were written during my free time after I had to have surgery for a non-united fracture of right arm. This is a one effort to avoid over thinking and a way to recover from my sadness. Please do not expect a perfection.</p>
+<p>Even though I work alone, the content were inspired and cited from various #Rstat Community, thus a big thanks for them. Also, I would like to thank my mother who always take care of me, my father and big brother who always supportive, and my little brother who forces me for a play when I hit a block. The last for someone who I love, a perfect woman who I don’t expect to meet, I hope the best for you even though you do not felt the same.</p>
 <div class="inline-figure"><img src="index_files/figure-html/qrcode-1.png" width="192" style="display: block; margin: auto;"></div>
+</div>
+<div id="r-graphics-engine" class="section level2" number="0.1">
+<h2>
+<span class="header-section-number">0.1</span> R Graphics Engine<a class="anchor" aria-label="anchor" href="#r-graphics-engine"><i class="fas fa-link"></i></a>
+</h2>
+<p>R has two main graphics engine, the <a href="base_r.html#base_r">base graphics</a> and the grid graphics.<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;Paul Murrell, &lt;em&gt;R Graphics&lt;/em&gt;, 3rd ed. (Boca Raton, Florida: Chapman &amp;amp; Hall/CRC, 2018).&lt;/p&gt;"><sup>4</sup></a></span> Both has its own advantage and disadvantage. Base graphics is rather faster. It works by creating plot structure layer by layer for each operation, much like our thinking process.</p>
+<p>Grid graphics is a low level function by itself. It is rarely called by common user operation. However, there are two main graphics package that provided high level plotting function that utilized the grid graphics as the core, the lattice and ggplot2 package.</p>
+<p>At last, the presence of base and grid graphics engine make the possibility of producing graphical images in R endless.</p>
+</div>
+<div id="plot-anatomy-terminology" class="section level2" number="0.2">
+<h2>
+<span class="header-section-number">0.2</span> Plot Anatomy &amp; Terminology<a class="anchor" aria-label="anchor" href="#plot-anatomy-terminology"><i class="fas fa-link"></i></a>
+</h2>
+</div>
+<div id="basic-plot-type" class="section level2" number="0.3">
+<h2>
+<span class="header-section-number">0.3</span> Basic Plot Type<a class="anchor" aria-label="anchor" href="#basic-plot-type"><i class="fas fa-link"></i></a>
+</h2>
+</div>
+<div id="color-selection" class="section level2" number="0.4">
+<h2>
+<span class="header-section-number">0.4</span> Color Selection<a class="anchor" aria-label="anchor" href="#color-selection"><i class="fas fa-link"></i></a>
+</h2>
+</div>
+<div id="line-and-point-type" class="section level2" number="0.5">
+<h2>
+<span class="header-section-number">0.5</span> Line and Point Type<a class="anchor" aria-label="anchor" href="#line-and-point-type"><i class="fas fa-link"></i></a>
+</h2>
+</div>
+<div id="basic-statistical-calculation" class="section level2" number="0.6">
+<h2>
+<span class="header-section-number">0.6</span> Basic Statistical Calculation<a class="anchor" aria-label="anchor" href="#basic-statistical-calculation"><i class="fas fa-link"></i></a>
+</h2>
 
 </div>
 </div>
@@ -109,12 +142,18 @@
 
   <div class="chapter-nav">
 <div class="empty"></div>
-<div class="next"><a href="basic-data-visualization-with-base-r.html"><span class="header-section-number">1</span> Basic Data Visualization with Base R</a></div>
+<div class="next"><a href="base_r.html"><span class="header-section-number">1</span> Basic Data Visualization with Base R</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#section"></a></li>
 <li><a class="nav-link" href="#welcome">Welcome</a></li>
+<li><a class="nav-link" href="#r-graphics-engine"><span class="header-section-number">0.1</span> R Graphics Engine</a></li>
+<li><a class="nav-link" href="#plot-anatomy-terminology"><span class="header-section-number">0.2</span> Plot Anatomy &amp; Terminology</a></li>
+<li><a class="nav-link" href="#basic-plot-type"><span class="header-section-number">0.3</span> Basic Plot Type</a></li>
+<li><a class="nav-link" href="#color-selection"><span class="header-section-number">0.4</span> Color Selection</a></li>
+<li><a class="nav-link" href="#line-and-point-type"><span class="header-section-number">0.5</span> Line and Point Type</a></li>
+<li><a class="nav-link" href="#basic-statistical-calculation"><span class="header-section-number">0.6</span> Basic Statistical Calculation</a></li>
 </ul>
 
       <div class="book-extra">
@@ -132,7 +171,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>VizCom - Curated Collection of Data Visualization from the #Rstat Community</strong>" was written by Kadek Adit Wiryadana &amp; Rstat Community. It was last built on 2022-04-03.</p>
+    <p>"<strong>VizCom - Curated Collection of Data Visualization from the #Rstat Community</strong>" was written by Kadek Adit Wiryadana &amp; Rstat Community. It was last built on 2022-04-18.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

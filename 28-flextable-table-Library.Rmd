@@ -1,3 +1,142 @@
 # Flextable
 
-hi
+```{r}
+library(flextable)
+library(magrittr)
+```
+
+```{r load_data_airquality}
+data <- airquality
+```
+
+
+## Introduction to Flextable
+Another alternative to create a beautiful tables. It can produce nice tables in Word, PowerPoint or HTML.
+
+#### Extensive formatting capabilities
+
+* Flexible and Rich Syntax
+* Can be Mixed with text, images, ggplot and hyperlinks
+
+#### Publication Quality
+
+* Support for Caption and cross-references in HTML, Word, and PDF
+* Everything is coded
+* Already used by big companies
+
+#### Statics Table
+
+#### Variety of Supported Outputs
+Output includes HTML5, Ms Word, Ms PowerPoint and PDF
+
+#### Detailed Documentation
+Documentation available online at : https://ardata-fr.github.io/flextable-book/
+Detailed tutorial available by the author in youtube  at : https://www.youtube.com/watch?v=-EuPFZCTnHE&t=53s
+
+### A First Example
+
+```{r}
+flextable(data[ sample.int(5),]) %>%
+  add_header_row(colwidths = c(4,2), values = c("Air Quality", "Time")) %>%
+  theme_vanilla() %>%
+  add_footer_lines("Daily measurements in New York, May to September 1973") %>%
+  color(part = "footer", color = "#666666") %>%
+  set_caption(caption = "New York Air Quality Measurements")
+```
+
+### How to select the row and column
+
+Used "col_keys = " to select certain columns, add empty columns if it is not present in the data
+
+```{r}
+data_short <- head(data, n = 5)
+flextable(data_short,
+  col_keys = c("Wind", "Temp", "Month")) %>%
+  add_header_row(colwidths = c(2,1), values = c("Air Quality", "Time")) %>%
+  theme_vanilla() %>%
+  add_footer_lines("Daily measurements in New York, May to September 1973") %>%
+  color(part = "footer", color = "#666666") %>%
+  set_caption(caption = "New York Air Quality Measurements")
+```
+
+### Selectors
+
+i select the rows, while j select the column.
+We can select certain row and column by expressing a formula, as character vector, integer vector or logical vector.
+
+Example of making the wind and temp data turned orange when the corresponding wind value < 10.
+
+```{r}
+data_short <- head(data, n = 5)
+flextable(data_short,
+  col_keys = c("Wind", "Temp", "Month")) %>%
+  add_header_row(colwidths = c(2,1), values = c("Air Quality", "Time")) %>%
+  theme_vanilla() %>%
+  add_footer_lines("Daily measurements in New York, May to September 1973") %>%
+  color(part = "footer", color = "#666666") %>%
+  set_caption(caption = "New York Air Quality Measurements") %>%
+  color(i = ~ Wind < 10, j = c("Wind", "Temp"), color = "orange") %>% #change color
+  bg(i = ~ Temp >70, j = "Temp", bg = "red") #change background 
+```
+
+### Parts of the table
+there are only three parts: header, body and footer.
+
+#### Header
+
+Header default to only showing a column names
+
+#### Body
+
+Body default only showing the cells.
+
+#### Footer
+
+Footer is non-existent by default, otherwise it should be specified.
+
+Here the example of selecting each parts.
+```{r}
+data_short <- head(data, n = 5) #selecting few rows of the data
+flextable(data_short,
+  col_keys = c("Wind", "Temp", "Month")) %>%   # selecting the column to be displayed
+  add_header_row(colwidths = c(2,1), values = c("Air Quality", "Time")) %>%  #specify the additional header
+  theme_vanilla() %>%  # selecting the theme
+  add_footer_lines("Daily measurements in New York, May to September 1973") %>% #specifying the footer
+  color(part = "footer", color = "#666666") %>% # selecting footer colour
+  set_caption(caption = "New York Air Quality Measurements") %>% #add caption in the footer
+  color(i = ~ Wind < 10, j = c("Wind", "Temp"), color = "orange") %>% #change color
+  bg(i = ~ Temp >70, j = "Temp", bg = "red") %>% #change background 
+  bg(part = "header", bg = "light blue")    # add background color to header
+```
+
+#### Cell content
+
+content of a cell are following the data frame by default, but it can be customized.
+
+colformat_double : to define how to display "doubles"
+colformat_int : to define how to display "integers"
+colformat_char : to define how to display "characters"
+
+additionally also there are colformat for others, including colformat_datetime(), colformat_date(), colformat_image(), colformat_lgl(), and colformat_num().
+
+with multiple content we can select with i and j and parts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
